@@ -30,6 +30,9 @@
 #define USE_DETAIL_SHAPES
 #endif
 
+//SUPERDETAIL SHAPES
+#define USE_DETAIL_SHAPES
+
 #ifdef USE_DETAIL_SHAPES
 #include "engine/ivdebugoverlay.h"
 #include "playerenumerator.h"
@@ -616,7 +619,7 @@ void CDetailModel::GetRenderBoundsWorldspace( Vector& mins, Vector& maxs )
 
 bool CDetailModel::ShouldReceiveProjectedTextures( int flags )
 {
-	return false;
+	return true;
 }
 
 bool CDetailModel::UsesPowerOfTwoFrameBufferTexture()
